@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🎉 From Devansh!</title>
+    <style>
+        body {
+            background-color: #fff0f5;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            padding: 50px;
+            color: #6a1b9a;
+        }
+        h1 {
+            font-size: 3em;
+            color: #d500f9;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        a {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #ab47bc;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        a:hover {
+            background-color: #8e24aa;
+        }
+        .emoji {
+            font-size: 2.5em;
+        }
+        .gif {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 🎵 Background Music -->
+    <audio autoplay loop>
+        <source src="{{ url_for('static', filename='music/happy-birthday-334876.mp3') }}" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="emoji">🎉🎂🥳🎁</div>
+    <h1>Happy Birthday, {{ name }}! 🎈</h1>    
+    <p>On your special day, I wish you all the love and success you truly deserve. 🌟💐</p>
+    <p>May this year bring you happiness, good health, and countless blessings. 🌷✨</p>
+    <p>May every moment of your life be as beautiful as this day. 🎈💖</p>
+
+    <!-- 🎆 GIF Animation -->
+    <div class="gif">
+        <img src="{{ url_for('static', filename='Photos/Happy_Birthday.gif') }}" alt="Birthday Celebration" width="300">
+    </div>
+
+    <div class="emoji">🎊💐🍬</div>
+    <a href="/">🔁 Create Another Surprise</a>
+</body>
+</html>
